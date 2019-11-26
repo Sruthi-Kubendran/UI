@@ -21,7 +21,7 @@ a.navbar-brand {
   font-size: 2rem;
   font-weight: bolder;
   text-transform: none;
-  color: whitesmoke;
+  color: black;
   text-shadow: 2px 2px 4px #000000;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -134,11 +134,12 @@ a {
 }
 
 .btn:hover{
-  color:rgb(18, 32, 223);
+  color:green;
+ 
 }
 a:hover{
   color: black;
-}
+} 
 .btn {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -148,9 +149,6 @@ a:hover{
   width: 190px;
 }
 
-.new{
-  background-color: black;
-}
 .btn,
 strong {
   font-weight: 500;

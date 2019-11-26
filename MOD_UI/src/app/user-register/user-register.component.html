@@ -1,6 +1,6 @@
 <div class="container-fluid py-3">
-    <div class="row py-4">
-        <div class="col-sm-4"></div>
+    <div class="row py-1">
+        <div class="col-sm-7"></div>
         <div class="col-sm-4">
             <div class="card card-signin">
                 <div class="card-body">
@@ -15,7 +15,7 @@
                                 <div class="form-row">
                                     <div class="form-group col required">
                                         <label>First Name</label>
-                                        <input class="form-control" formControlName="firstName" style="border-radius: 1.5rem" placeholder="first name">
+                                        <input class="form-control" formControlName="firstName"  placeholder="first name">
                                         <small class="text-danger"
                                             *ngIf="(UserRegister.get('firstName').touched &&  UserRegister.get('firstName').errors?.required)">This
                                             field is mandatory</small>
@@ -26,7 +26,7 @@
                                     </div>
                                     <div class="form-group col required">
                                         <label>Last Name</label>
-                                        <input class="form-control" formControlName="lastName" style="border-radius: 1.5rem" placeholder="last name">
+                                        <input class="form-control" formControlName="lastName"  placeholder="last name">
                                         <small class="text-danger"
                                             *ngIf="UserRegister.get('lastName').touched && UserRegister.get('lastName').errors?.required">This
                                             field is mandatory</small>
@@ -37,18 +37,9 @@
                                     </div>
                                 </div>
 
-                                <!-- <div class="form-group required">
-                                    <label>User Name</label>
-                                    <input class="form-control" formControlName="userName" style="border-radius: 1.5rem" placeholder="user name">
-                                    <small class="text-danger"
-                                        *ngIf="UserRegister.get('userName').touched && UserRegister.get('userName').errors?.required">This
-                                        field is mandatory</small>
-                                </div> -->
-
-
                                 <div class="form-group required">
                                     <label>Email</label>
-                                    <input class="form-control" formControlName="email" style="border-radius: 1.5rem" placeholder="email">
+                                    <input class="form-control" formControlName="email"  placeholder="email">
                                     <small class="text-danger"
                                         *ngIf="UserRegister.get('email').touched && UserRegister.get('email').errors?.required">This
                                         field is mandatory</small>
@@ -59,7 +50,7 @@
 
                                 <div class="form-group required">
                                     <label>Contact Number</label>
-                                    <input class="form-control" formControlName="contactNumber" style="border-radius: 1.5rem" placeholder="contact number">
+                                    <input class="form-control" formControlName="contactNumber"  placeholder="contact number">
                                     <small class="text-danger"
                                         *ngIf="UserRegister.get('contactNumber').touched && UserRegister.get('contactNumber').errors?.required">This
                                         field is mandatory</small>
@@ -71,7 +62,7 @@
                                 <div class="form-row" formGroupName="Passwords">
                                     <div class="form-group col required">
                                         <label>Enter Password</label>
-                                        <input type="password" class="form-control" formControlName="password" style="border-radius: 1.5rem" placeholder="enter password">
+                                        <input type="password" class="form-control" formControlName="password" placeholder="enter password">
                                         <small class="text-danger"
                                             *ngIf="UserRegister.get('Passwords.password').touched && UserRegister.get('Passwords.password').errors?.required">This
                                             field is mandatory</small>
@@ -81,7 +72,7 @@
                                     </div>
                                     <div class="form-group col required">
                                         <label>Confirm Password</label>
-                                        <input type="password" class="form-control" formControlName="confirmPassword" style="border-radius: 1.5rem" placeholder="comfirm password">
+                                        <input type="password" class="form-control" formControlName="confirmPassword"  placeholder="comfirm password">
                                         <small class="text-danger"
                                             *ngIf="UserRegister.get('Passwords.confirmPassword').touched && UserRegister.get('Passwords.confirmPassword').errors?.required">This
                                             field is mandatory</small>
@@ -93,7 +84,7 @@
                                 <div class="form-row my-1">
                                     <div class="form-group col-md-12">
                                         <button class="btn btn-lg btn-success btn-block"
-                                            [disabled]="!UserRegister.valid"  style="border-radius: 1.8rem">Sign Up</button>
+                                            [disabled]="!UserRegister.valid"  >Sign Up</button>
                                     </div>
                                 </div>
                                 <div class="text-center p-2">

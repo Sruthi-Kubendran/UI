@@ -14,6 +14,7 @@ navbar {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  background-image: url("../../../assets/images/img1.jpg");
 }
 
 a.navbar-brand {
@@ -134,7 +135,7 @@ a {
 }
 
 .btn:hover{
-  color:rgb(18, 32, 223);
+  color:green;
 }
 a:hover{
   color: black;

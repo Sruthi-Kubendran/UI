@@ -1,33 +1,16 @@
-<div class="my">  
-       
+<div class="my">      
             <form class="form-signin">
-        
-                <div class="row">
-                    
-        
-                    <div class="col-sm-2 col-sm-2"></div>
-                   
-        
-                    <div class="col-sm-4 col-sm-4">
-                            <br><br><br><br><br><br>
+                <div class="col-sm-10 ">
+                        <div class="col-sm-6">
                         <div class="form-group">
                             <label style="color: rgb(43, 49, 43);font-weight: bold">Select Your Technology</label>
                             <select [(ngModel)]="tech" name="tech" class="form-control mb-2 rounded text-center dropdown">
                                 <option value="" disabled>Select your technology</option>
                                 <option *ngFor="let t of skillData" value="{{t.name}}">{{t.name}}</option>
                             </select>
+                            <button class="btn btn-danger" (click)="onSubmit()" style="color: white">Search here</button>
                         </div>
-                    </div>
-                    <div class="col-sm-4 com-sm-4">
-                            <br><br><br><br><br><br>
-                        <div class="form-group ">
-                            <label></label>
-                            <button class="btn btn-md btn-2 btn-block" (click)="onSubmit()" style="color: white">Search here</button>
-                        </div>
-                    </div>
-        
-                    <div class="col-sm-2 col-sm-2"></div>
-                    
+                    </div>        
                 </div>
             </form>
         
@@ -36,14 +19,11 @@
                 <div class="h4 text-center">
                     <p> No search result found </p>
                 </div>
-                <!-- <div class="d-inline back-button"><button class="btn btn-md btn-secondary" (click)="backToHome()">Back</button>
-                </div> -->
             </div>
         </div>
         <div *ngIf="status2" class="container py-4">
             <div class="row my-2">
                 <div class="col-md-3 text-center">
-                    
                 </div>
                 <div class="col-md-6 text-center">
                     <p class="text-muted h4"> Search Result for " {{tech}} "

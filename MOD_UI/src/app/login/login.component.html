@@ -1,6 +1,6 @@
 <div class="container-fluid py-5">
-    <div class="row py-5">
-        <div class="col-sm-4"></div>
+    <div class="row py-2">
+        <div class="col-sm-7"></div>
         <div class="col-sm-4">
             <div class="card card-signin">
                 <div class="card-body">
@@ -11,8 +11,8 @@
 
                         <div class="form-group required">
                             <label>Email</label>
-                            <input class="form-control" formControlName="Email" placeholder="email" 
-                            style="border-radius: 1.5rem">
+                            <input class="form-control" formControlName="Email" placeholder="Email" 
+                            >
                             <small class="text-danger"
                                 *ngIf="UserLogin.get('Email').touched && UserLogin.get('Email').errors?.required">This
                                 field is mandatory</small>
@@ -23,13 +23,13 @@
 
                         <div class="form-group required">
                             <label>Enter Password</label>
-                            <input type="password" class="form-control" formControlName="Password" placeholder="password"
-                            style="border-radius: 1.5rem">
+                            <input type="password" class="form-control" formControlName="Password" placeholder="Password"
+                            >
                             <small class="text-danger"
                                 *ngIf="UserLogin.get('Password').touched && UserLogin.get('Password').errors?.required">This
                                 field is mandatory</small>
                             <small class="text-danger"
-                                *ngIf="UserLogin.get('Password').touched && UserLogin.get('Password').errors?.minlength">Minimun
+                                *ngIf="UserLogin.get('Password').touched && UserLogin.get('Password').errors?.minlength">Minimum
                                 4 characters required</small>
                         </div>
 
@@ -37,7 +37,7 @@
                         <div class="form-row">
                             <div class="form-group col-md-12" style="text-align: center">
                                 <button class="btn btn-lg btn-success btn-block" [disabled]="!UserLogin.valid" 
-                                style="border-radius: 1.8rem">Sign in</button>
+                                >Sign in</button>
                             </div>
                         </div>
                     </form>
